@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/library/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>users eligibility to vote</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <form class="card mt-5 p-3 shadow" name="eligibility-form" onsubmit="checkEligibility(event)">
+                <h2 class="header text-center p-2 bg-primary text-white mb-3">check your eligibility to vote</h2>
+                <div class="form-group mt-3">
+                    <input type="text" name="age" id="age" class="form-control" placeholder="Enter your age" required autocomplete="off">
+                    <p class="form-text">Age must be a number greater than zero</p>
+                </div>
+                <div class="alert alert-success d-none" id="result"></div>
+                <div class="alert alert-danger d-none" id="error"></div>
+                <div class="alert alert-info d-none" id="info"></div>
+                <div class="form-group">
+                <button type="submit" class="btn btn-lg btn-outline-primary">check eligibilty</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
